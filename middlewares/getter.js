@@ -10,6 +10,7 @@ module.exports = (config, { strapi }) => {
       // const headersAndSignature = cookies.get('token.sig')
 
       // reconstruct the jwt from the cookies
+      console.log('jwt', jwt);
       if (jwt) {
         // const jwt = joinJwt(payload, headersAndSignature)
         request.headers.authorization = `Bearer ${jwt}`
@@ -22,6 +23,7 @@ module.exports = (config, { strapi }) => {
       //   cookies.set(COOKIE_NAME.PAYLOAD, payload, payloadOpts)
       // }
     } else {
+      console.log('not from frontend', request.url, request.headers.authorization);
       await next()
     }
   }
