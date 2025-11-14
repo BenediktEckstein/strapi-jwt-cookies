@@ -23,7 +23,7 @@ module.exports = (config, { strapi }) => {
       //   cookies.set(COOKIE_NAME.PAYLOAD, payload, payloadOpts)
       // }
     } else {
-      console.log('not from frontend', request.url, request.headers.authorization);
+      // console.log('not from frontend', request.url, request.headers.authorization);
       await next()
     }
   }
