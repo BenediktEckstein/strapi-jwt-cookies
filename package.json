@@ -1,5 +1,5 @@
 {
-  "name": "@bwyx/strapi-jwt-cookies",
+  "name": "@BenediktEckstein/strapi-jwt-cookies",
   "version": "0.0.7",
   "description": "Securely use Strapi JWT on cookies",
   "main": "index.js",
